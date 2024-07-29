@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/base.css" rel="stylesheet">
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="login-box">
+        <div>
+            <div class="login">LOGIN</div>
+        </div>
+        <hr class="hr"/>
+        <div class="login-text">ID</div>
+        <div class="id"><input type="text" id="id"></div>
+        <div class="login-text">PASSWORD</div>
+        <div class="pw"><input type="password" id="password"></div>
+        <div class="btn"><button type="button" id="btn">submit</button></div>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        let cnt = 0;
+        $("#btn").on("click", function(){
+            if (cnt == 5){
+                alert("로그인 가능 횟수 5회 초과하였습니다.");
+            } else if ($("#id").val() !== "admin"){
+                alert("아이디가 일치하지 않습니다.");
+                cnt += 1;
+            } else if ($("#password").val() !== "admin1234"){
+                alert("비밀번호가 일치하지 않습니다.");
+                cnt += 1;
+            } else {
+                alert("로그인에 성공했습니다.");
+                console.log("버튼클릭");
+                cnt = 0; // 로그인 성공 시 카운터 초기화
+                window.location.href = "../"; // index.html 페이지로 이동
+            
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'gtp/style.css' %}">
+{% endblock %}
+<form action="chat" method="post" enctype="application/x-www-form-urlencoded">
+    {% csrf_token %}
+    <div id="file-module-0">
+        <div><label>chatGPT에게 요청하기 self</label></div>
+        <textarea id="question" name="question">{{question}}</textarea>
+    </div>
+    <div>
+      <div><label>응답</label></div>
+      <span id="result">{{result}}</span>
+  </div>
+    <div><button id="text-button" type="submit" >질문</button></div>
+</form>
