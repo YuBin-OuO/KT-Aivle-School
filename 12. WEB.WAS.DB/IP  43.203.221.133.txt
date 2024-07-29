@@ -1,0 +1,3 @@
+IP : 43.203.221.133
+ID : ubuntu
+PW : key-for-web-was-db.pem

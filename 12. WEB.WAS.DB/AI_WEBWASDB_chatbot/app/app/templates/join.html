@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Join</title>
+        <link rel="icon" href="https://www.kt.com/favicon.ico">
+        <link rel="stylesheet" href="../static/css/main.css">
+        <link rel="stylesheet" href="../static/css/join.css">
+        <!-- web font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        {% include 'header.html' %}
+        <main class="contents">
+            <section class="wrap">
+                <div class="join-wrap">
+                    <div class="attr-wrap">
+                        <label>Work Email</label><br>
+                        <input id="email" type="email" placeholder="input email address" value="admin@kt.com">
+                    </div><hr>
+                    <div class="attr-wrap">
+                        <label>Password</label><br>
+                        <input id="pw" type="password" placeholder="input password" value="1234">
+                    </div><hr>
+                    <div class="attr-wrap">
+                        <label>Check Password</label><br>
+                        <input id="ckpw" type="password" placeholder="input password" value="12345">
+                    </div><hr>
+                    <div class="attr-wrap">
+                        <label>Address</label><br>
+                        <div class="input-addr">
+                            <label><input type="radio" name="addr" value="seoul" checked>Seoul</label>
+                            <label><input type="radio" name="addr" value="pusan">Pusan</label>
+                        </div>
+                    </div><hr class="m-0">
+                    <div class="attr-wrap">
+                        <label>Birthday</label><br>
+                        <input id="birth" type="date" value="2000-03-23">
+                    </div><hr>
+                    <div class="attr-wrap">
+                        <label>Subscription Path</label><br>
+                        <select id="subscription">
+                            <option value="opt0">Not Selected</option>
+                            <option value="opt1" selected>Recommended by Friends</option>
+                            <option value="opt2">Advertisement</option>
+                        </select>
+                    </div><hr>
+                    <small class="msg">Write msg.</small>
+                </div>
+                <button id="join-btn" type="button">Join</button>
+            </section>
+        </main>
+        <footer>
+            <p>All rights reserved. ©KT</p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="../static/js/join.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+main {
+    width: 100%;
+}
+
+main>section>.contents-wrap {
+    padding: 40px 0;
+}
+
+main>section>.contents-wrap>.input-address,
+main>section>.contents-wrap>.search {
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+main>section>.contents-wrap>.search {
+    border: 1px solid #28a745;
+    background: none;
+    color: #28a745;
+    cursor: pointer;
+}
+
+main>section>.contents-wrap>.search:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+main>section>.table-wrap{
+    display: none;
+    padding-top: 0;
+}
+main>section>.contents-wrap>table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+table tr{
+    border-bottom: 1px solid gray;
+}
+table th, table td {
+    padding: 10px;
+}

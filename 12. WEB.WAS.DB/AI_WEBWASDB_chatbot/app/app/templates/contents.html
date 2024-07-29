@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="icon" href="https://www.kt.com/favicon.ico">
+        <link rel="stylesheet" href="../static/css/main.css">
+        <link rel="stylesheet" href="../static/css/contents.css">
+        <!-- web font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>             
+            <nav>
+                <label><b>KT</b></label>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="contents" class="active">Contents</a></li>
+                    <li><a href="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="wrap">
+                <h1>Category Classification</h1>
+                <p>Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                <input class="sentence" type="text" value="주식 시장 예측 불가능">
+                <button class="send-btn" type="button">Send</button>
+            </section>
+            <section class = "result">
+                <p>Result: <span class="result-category"></span></p>
+                <div id="container"></div>
+            </section>
+        </main>
+        <footer>
+            <p>All rights reserved. ©KT</p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="../static/js/contents.js"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+          <!-- font-family 이름은 원하는 대로 써줘도 됨 -->
+          font-family: 'D2Coding';
+          src: url('D2Coding.ttc');
+      }
+      
+      html, body{
+        <!-- 뒤에 쓰는게 더 우선순위 높음 -->
+        font-family: 'D2Coding';
+        font-family: 'Noto Sans';
+
+        <!-- 일단 D2Coding 폰트를 사용하되 거기에 없는 문자들(한자, 일본어 등)은 Noto Sans를 사용하겠다는 의미 -->
+        font-family: 'D2Coding', 'Noto Sans';
+      }
+    </style>
+  </head>
+  <body>
+    It's a beautiful day outside.
+    <ul>
+      <li id="no" class="data no1">data1</li>
+      <li class="data no2" value="d2">data2</li>
+      <li class="data no3" value="d3">data3</li>
+    </ul>
+  </body>
+</html>

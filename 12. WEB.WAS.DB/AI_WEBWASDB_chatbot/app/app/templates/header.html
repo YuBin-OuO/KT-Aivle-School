@@ -1,0 +1,15 @@
+<header>
+    <nav>
+        <label><b>KT</b></label>
+        <ul>
+            <li><a class="home" href="/">Home</a></li>
+            {% if user %}
+            <li><a class="contents" href="contents">Contents</a></li>
+            <li><a class="logout" href="logout">Logout</a></li>
+            {% else %}
+            <li><a class="join" href="join">Join</a></li>
+            <li><a class="login" href="login">Login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>

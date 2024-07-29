@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input class="itext" type="text" value="KT" />
+      <p class="ptxt">KT Aivle🌟</p>
+      <button class="txt_btn">Click</button>
+    </div>
+    <hr />
+    <div>
+      <p class="shtxt">Javascript</p>
+      <button class="show">show</button>
+      <button class="hide">hide</button>
+    </div>
+    <hr />
+    <div>
+        <input class="addr_txt" type="text">
+        <button class="addr_btn">Address</button>
+    </div>
+  </body>
+  <!-- jquery import -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    console.log("Hello, JS!");
+
+    // 클래스명으로 데이터 가져오기
+    var data1 = document.getElementsByClassName("itext");
+    console.log("data1:", data1[0].value);
+
+    // CSS Selector 써서 데이터 가져오기
+    var data2 = document.querySelector(".ptxt");
+    console.log("data2:", data2["textContent"]);
+
+    // 버튼 클릭하면 데이터 가져오기
+    /*
+    var btn = document.querySelector(".txt_btn");
+    // click event 발생 시 뒤의 함수 실행
+    btn.addEventListener('click', function(){
+        var data3 = document.querySelector(".itext");
+        console.log(data3.value);
+        alert(data3.value);
+    });
+    */
+
+    // jQuery (위의 html 전부 실행된 뒤에 실행되도록) -> 지금 html과 js코드를 같은 파일에 작성해주고 있으므로 써줘야 하는 것! 다른 파일에 있을 경우 써줄 필요 X
+    $(document).ready(function () {
+      $(".txt_btn").on("click", function () {
+        var data4 = $(".itext").val();
+        console.log(data4);
+        // alert(data4);
+        $(".ptxt").text(data4);
+      });
+
+      $(".show").on("click", function(){
+        $(".shtxt").show(500); // 0.5초동안 동작
+      });
+      $(".hide").on("click", function(){
+        $(".shtxt").hide(500); // 0.5초동안 동작
+      });
+
+      // Ajax: 비동기 통신 (서버에서 데이터 받아올 때 비동기 방식으로 동작)
+      $(".addr_btn").on("click", function(){
+        var addr = $(".addr_txt").val();
+        console.log(addr);  
+        var url = "https://apis.zigbang.com/v2/search?leaseYn=N&q=" + addr + "&serviceType=원룸";
+        $.getJSON(url, function(response){
+            console.log(response.items[0].description);
+        }) // post 방식일 땐 postJSON으로 써야 됨
+      })
+
+
+    });
+    // $는 변수 이름
+  </script>
+</html>

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'D2Coding';
+    src: url('../font/D2Coding.ttc');
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #343a40;
+    color: white;
+    font-family: 'Roboto', 'D2Coding', sans-serif;
+}
+
+header {
+    height: 60px;
+    background-color: white;
+    color: black;
+}
+
+header>.wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 12px 20px;
+}
+
+header>.wrap>.logo {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+header>.wrap>img {
+    width: 30px;
+    padding-top: 5px;
+}
+
+header>.wrap>ul {
+    float: right;
+    margin-top: 10px;
+}
+
+header>.wrap>ul>li {
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
+
+header>.wrap>ul>li>a {
+    color: #6c757d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header>.wrap>ul>li>a.active {
+    color: #343a40;
+    border-bottom: 3px solid #343a40;
+}
+
+footer {
+    max-width: 720px;
+    margin: 0 auto;
+    height: 20px;
+    padding: 20px;
+    text-align: center;
+}
+footer>p {
+    margin: 0;
+}
+
+main {
+    /* header height 60px + footer height 60px = 120px */
+    height: calc(100% - 120px); 
+    max-width: 720px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+}
+
+main.contents>.wrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+main.contents p {
+    font-size: 20px;
+}
+
+main.contents button {
+    padding: 20px 30px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main.contents button.over-red:hover {
+    background-color: red;
+    color: white;
+}
