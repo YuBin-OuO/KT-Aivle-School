@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="icon" href="https://www.kt.com/favicon.ico">
+        <link rel="stylesheet" href="../static/css/main.css">
+        <link rel="stylesheet" href="../static/css/contents.css">
+        <!-- web font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <label><b>KT</b></label>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="contents" class="active">Contents</a></li>
+                    <li><a href="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="wrap">
+                <div class="contents-wrap">
+                    <input class="input-address" type="text" value="신사동">
+                    <button class="search">Search</button>
+                </div>
+                <div class="contents-wrap table-wrap" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>ID</th>
+                                <th>Address</th>
+                                <th>Latitude</th>
+                                <th>Logitude</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1234</td>
+                                <td>합정동</td>
+                                <td>12.34</td>
+                                <td>56.78</td>
+                                <td>마포구 합정동</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1234</td>
+                                <td>합정동</td>
+                                <td>12.34</td>
+                                <td>56.78</td>
+                                <td>마포구 합정동</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>All rights reserved. ©KT</p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="../static/js/contents.js"></script>
+    </body>
+</html>

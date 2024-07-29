@@ -1,0 +1,31 @@
+.login-wrap {
+    width: 300px;
+}
+.attr-wrap{
+    height: 75px;
+}
+.login-wrap label{
+    float: left;
+    margin-top: 10px;
+}
+
+#email, #pw{
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 10px;
+    /* padding left right 5px * 2 = 10px */
+    width: calc(100% - 20px); 
+}
+.msg{
+    display: none;
+    float: left;
+    height: 0px;
+    color: yellow;
+    font-size: 10px;
+}
+#login-btn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+}

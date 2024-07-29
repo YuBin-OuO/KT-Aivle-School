@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Emmit : ctrl + space -->
+
+    <!-- 하위 레벨 태그 생성 html  -->
+    <!-- p>span --> 
+    <p><span></span></p>
+
+    <!-- 같은 레벨 태그 생성 html  -->
+    <!-- p+span --> 
+    <p></p>
+    <span></span>
+
+    <!-- 태그 묶음 html -->
+    <!-- (p>span)+(p>span)+(p>span) --> 
+    <p><span></span></p>
+    <p><span></span></p>
+    <p><span></span></p>
+
+
+    <!-- 부모 element 접근 -->
+    <!-- p>span^p>span --> 
+    <p><span></span></p>
+    <p><span></span></p>
+
+    <!-- type 속성 -->
+    <!-- input:radio --> 
+    <input type="radio" name="" id=""> 
+    <!-- input:checkbox --> 
+    <input type="checkbox" name="" id=""> 
+    <!-- input:submit --> 
+    <input type="submit" value="">
+
+    <!-- # : 아이디, . : 클래스 -->
+    <!-- p#data>span.text --> 
+    <p id="data"><span class="text"></span></p>
+
+    <!-- * : 반복 -->
+    <!-- p#data>span.text*3 --> 
+    <p id="data"><span class="text"></span><span class="text"></span><span class="text"></span></p>
+
+    <!-- $ : 순번 -->
+    <!-- p#data>span.text$*3 --> 
+    <p id="data"><span class="text1"></span><span class="text2"></span><span class="text3"></span></p>
+
+    <!-- @ : 순번의 시작번호 -->
+    <!-- p#data>span.text$@5*3 -->
+    <p id="data"><span class="text5"></span><span class="text6"></span><span class="text7"></span></p>
+
+    <!-- {} : 문자열 입력 -->
+    <p id="data"><span class="text">span-1</span><span class="text">span-2</span><span class="text">span-3</span></p>
+
+    <!-- [] : 속성값 입력 -->
+    <!-- a[href=http://google.com]{구글로 이동} -->
+    <a href="http://google.com">구글로 이동</a>
+
+    <!-- Example -->
+    <!-- #page>nav.nav$>ul>li.item-$$@5{목록아이템-$$@0}*5 -->
+    <div id="page">
+        <nav class="nav1">
+            <ul>
+                <li class="item-05">목록아이템-00</li>
+                <li class="item-06">목록아이템-01</li>
+                <li class="item-07">목록아이템-02</li>
+                <li class="item-08">목록아이템-03</li>
+                <li class="item-09">목록아이템-04</li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+</html>

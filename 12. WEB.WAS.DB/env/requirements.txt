@@ -1,0 +1,10 @@
+ipython
+jupyter
+numpy
+pandas
+requests
+bs4
+selenium
+scikit-learn
+seaborn
+flask

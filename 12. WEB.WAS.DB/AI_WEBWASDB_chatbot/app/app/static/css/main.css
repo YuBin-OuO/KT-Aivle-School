@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #343a40;
+    color: white;
+    font-family: "Roboto";
+}
+
+header {
+    height: 60px;
+    background-color: white;
+    color: black;
+}
+header>nav {
+    max-width: 720px;
+    padding: 12px 20px;
+    margin: 0 auto;
+}
+
+header>nav>label {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+header>nav>ul {
+    float: right;
+    margin-top: 10px;
+}
+
+header>nav>ul>li {
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
+
+header>nav>ul>li>a {
+    color: #6c757d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header>nav>ul>li>a.active {
+    color: #343a40;
+    border-bottom: 3px solid #343a40;
+}
+
+footer {
+    max-width: 720px;
+    margin: 0 auto;
+    height: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer>p {
+    margin: 0;
+}
+
+main {
+    height: calc(100% - 120px);
+    padding: 0 20px;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+}
+
+main.contents>section{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+main>section>button {
+    padding: 16px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main>section>button:hover {
+    background-color: #F33;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+.sentence {
+    width: calc(100% - 240px);
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    height: 10px; /* input창에 글자 입력하는 높이 */
+}
+
+.send-btn {
+    border: 1px solid #28a745;
+    background: none;
+    color: #28a745;
+    cursor: pointer; /* 마우스 올렸을 때 손가락 모양 뜨도록 */
+    width: 150px;
+    padding: 10px;
+}
+
+.send-btn:hover {
+    color: white;
+    background-color: #28a745;
+} /* 버튼에 마우스 올렸을 때 */
+
+section.result {
+    display: none;
+}

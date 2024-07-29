@@ -1,0 +1,12 @@
+web was db
+
+ec2-for-web-was-db
+public IP: 43.203.195.144 
+passwd: qwer
+argon2:$argon2id$v=19$m=10240,t=10,p=8$KdecEw/CJsDJEOE1Iu1m1g$a9qd6d/P+2RJHRC3nChdaH4xvinLM/EX59w89yHQB7c
+private IP: git bash 콘솔창 타이틀(172.31.3.44)
+
+mongodb
+user: yubin
+pwd:qwer
+

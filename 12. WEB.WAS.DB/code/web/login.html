@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="icon" href="https://www.kt.com/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap">
+            <label class="logo"><b>KT</b></label>
+            <!-- <img src="https://www.kt.com/favicon.ico" alt="kt-logo"> -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+            </ul>
+        </div>
+    </header><!-- header -->
+    <main class="contents">
+        <section class="wrap">
+            <div class="login-wrap">
+                <div class="attr-wrap">
+                    <label>Work Email</label><br>
+                    <input id="email" type="text" placeholder="input email address." value="admin2@kt.com">
+                </div><hr>
+                <div class="attr-wrap">
+                    <label>Password</label><br>
+                    <input id="pw" type="password" placeholder="input password." value="1234">
+                </div><hr>
+                <small class="msg"></small>
+            </div>
+            <button id="login-btn" class="over-red" type="button" name="button">Login</button>
+        </section>
+    </main><!-- main -->
+    <footer class="footer">
+        <p>All rights reserved. ©KT</p>
+    </footer><!-- footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

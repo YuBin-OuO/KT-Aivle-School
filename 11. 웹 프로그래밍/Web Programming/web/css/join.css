@@ -1,0 +1,51 @@
+.join-wrap {
+    width: 300px;
+}
+
+#email, #pw, #ckpw, #birth, #subscription {
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 10px;
+    width: calc(100% - 20px);
+}
+
+#subscription{
+    width: 100%;
+}
+
+.attr-wrap{
+    height: 75px;
+}
+
+.join-wrap>.attr-wrap>label {
+    float: left;
+    margin-top: 10px;
+}
+
+.input-addr {
+    margin: 10px 0px 0px -5px;
+}
+
+.input-addr>label {
+    float: left;
+    margin-top: 10px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.msg{
+    /* display: none; */
+    float: left;
+    height: 0;
+    font-size: 11px;
+    color: yellow;
+}
+
+#join-btn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+}

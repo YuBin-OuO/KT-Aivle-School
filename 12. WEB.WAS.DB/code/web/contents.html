@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contents</title>
+
+    <link rel="icon" href="https://www.kt.com/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contents.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap">
+            <label class="logo"><b>KT</b></label>
+            <!-- <img src="https://www.kt.com/favicon.ico" alt="kt-logo"> -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="" class="active">Contents</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </header><!-- header -->
+    <main>
+        <section class="wrap">
+            <div class="contents-wrap">
+                <input class="input-address" type="text" placeholder="Input Address" value="신사동"></input>
+                <button class="search">Search</button>
+            </div>
+            <div class="contents-wrap table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Latitude</th>
+                            <th scope="col">Longitude</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1234</td>
+                            <td>합정동</td>
+                            <td>12.34</td>
+                            <td>12.34</td>
+                            <td>마포구 합정동</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1234</td>
+                            <td>합정동</td>
+                            <td>12.34</td>
+                            <td>12.34</td>
+                            <td>마포구 합정동</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main><!-- main -->
+    <footer class="footer">
+        <p>All rights reserved. ©KT</p>
+    </footer><!-- footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/contents.js"></script>
+</body>
+
+</html>
