@@ -1,0 +1,89 @@
+/* base.css */
+body {
+    background-color: #d0eafe;
+    color: white;
+    font-family: 'NeoGothic'; /* NeoGothic 폰트 사용 */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 화면 전체 높이 */
+    margin: 0; /* 기본 여백 제거 */
+    background-image: url('./chatBG.png');
+    background-size: 80%; /* 또는 'contain' 혹은 지정된 크기 사용 */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 스크롤 시 배경 고정 */
+}
+
+.login-box {
+    background-color: #E1F2FF;
+    width: 500px;
+    height: 600px; /* 높이 조정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); /* 약간의 그림자 효과 추가 */
+}
+
+.id,
+.pw,
+.btn {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.id input[type="text"],
+.pw input[type="password"] {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-family: 'NeoGothic';
+    font-size: 14px;
+}
+
+.login {
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 20px 0px;
+}
+
+hr {
+    width : 400px;
+    margin-bottom: 20px;
+  }
+
+.btn button {
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #4baffb;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 25px;
+    margin-top: 30px;
+    border: none;
+}
+
+.btn button:hover {
+    background-color: #0091ff;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'NeoGothic';
+    font-size: 14px;
+}
+ .login-text {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+ }

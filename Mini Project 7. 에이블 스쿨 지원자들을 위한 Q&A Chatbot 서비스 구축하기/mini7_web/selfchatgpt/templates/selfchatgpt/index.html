@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Chat</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'selfchatgpt/style.css' %}">
+    <style>
+        /* 여기에 추가적인 CSS를 넣어도 됨. */
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <form id="chat-form" action="chat" method="post" enctype="application/x-www-form-urlencoded">
+            {% csrf_token %}
+            <div id="chat-history">
+                <!-- 채팅 내용이 동적으로 추가될 부분 -->
+            </div>
+            <div id="question-box">
+                <div id="file-module-0">
+                    <label for="question">ChatGPT에게 질문하기</label>
+                    <textarea id="question" name="question"></textarea>
+                </div>
+                <div>
+                    <button id="text-button" type="submit">질문</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- jQuery 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JavaScript 코드 추가 -->
+    <script>
+        $(document).ready(function() {
+            // 초기 메시지 추가
+            addChatMessage('bot', '안녕하세요! 🫧<br>KT 에이블스쿨에 관련해 질문해주세요.');
+        
+            $('#chat-form').submit(function(event) {
+                event.preventDefault(); // 기본 제출 동작 방지
+                var formData = $(this).serialize(); // 폼 데이터 직렬화
+        
+                // AJAX 요청
+                $.ajax({
+                    type: 'POST',
+                    url: $(this).attr('action'),
+                    data: formData,
+                    success: function(response) {
+                        var question = $('#question').val(); // 질문 내용 가져오기
+                        addChatMessage('me', question); // 사용자 질문 추가
+        
+                        var result = response.result; // 서버에서 받은 답변
+                        addChatMessage('bot', result); // 봇 답변 추가
+        
+                        $('#question').val(''); // 질문 입력창 초기화
+                    },
+                    error: function(xhr, errmsg, err) {
+                        console.log('Error:', errmsg); // 오류 처리
+                    }
+                });
+            });
+
+        
+            // 채팅창에 메시지 추가하는 함수
+            function addChatMessage(sender, message) {
+                var chatHistory = $('#chat-history');
+                var messageClass = (sender === 'me') ? 'message me' : 'message bot';
+                
+                var messageElement = $('<div class="' + messageClass + '"></div>').html(message);
+                // 첫 메시지 줄바꿈 위해 message 변수에 HTML 태그를 포함하도록 수정
+                
+                chatHistory.append(messageElement);
+            
+                // 채팅창을 맨 아래로 스크롤
+                chatHistory.scrollTop(chatHistory[0].scrollHeight);
+            }
+        });
+    </script>
+</body>
+</html>

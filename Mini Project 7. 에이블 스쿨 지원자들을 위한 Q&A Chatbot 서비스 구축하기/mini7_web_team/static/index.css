@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Ownglyph_noocar-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_noocar-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Ownglyph_noocar-Rg', Arial, sans-serif; /* Fallback 폰트로 Arial, sans-serif를 지정 */
+    line-height: 1.6;
+    background-image: url('chatBG.png'); /* 이미지 경로를 지정하세요 */
+    background-size: cover; /* 이미지가 화면 전체를 채우도록 조정 */
+    background-position: center; /* 이미지 중심이 화면 중심과 일치하도록 설정 */
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
+    height: 100%; /* 전체 높이 설정 */
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 뷰포트 높이에 맞춤 */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto; /* 자동 마진으로 중앙 정렬 */
+    padding: 20px;
+    flex-grow: 1; /* 컨테이너가 여유 공간을 모두 채움 */
+}
+
+.navbar {
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    width: 100%; /* 네비게이션 바 전체 너비 사용 */
+}
+
+.navbar-brand {
+    margin-right: auto; /* 오른쪽으로 모든 여백을 밀어내어 왼쪽 정렬 */
+    display: flex;
+    align-items: center;
+}
+
+.homeIcon {
+    height: auto;
+    width: 50px; /* 로고 이미지 크기 조정 */
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    border: black 1px solid;
+}
+
+
+.nav-link:hover {
+    background-color: #d0eafe;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p.lead {
+    font-size: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #85c9fc;
+    border-radius: 5px;
+}
+
+.homeIcon {
+    width: 100px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
