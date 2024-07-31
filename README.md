@@ -1,4 +1,4 @@
-# 🫧 KT Aivle School 5기 AI Track
+# 🫧 KT Aivle School 5기 AI 개발자 Track
 ## 🗓️ 프로젝트 기간
 2024/02/20 ~ 2024/08/07
 ## 🧑‍💻 프로젝트 규모
