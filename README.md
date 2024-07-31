@@ -15,6 +15,6 @@
 - MIni Project 6-1. 유통 판매량 예측 및 재고 최적화
 - MIni Project 6-2. LLM을 활용한 간단한 Q&A 챗봇 구현
 - Mini Project 7. 에이블 스쿨 지원자들을 위한 Q&A Chatbot 서비스 구축하기
-## 💫 기타
+## 🌟 기타
 용량이 너무 커서 못 올린 파일들  
 👉 https://drive.google.com/drive/folders/1gytY2vdvfG24jgCUcaC96FQ6AHSljVtJ?usp=sharing
